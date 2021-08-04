@@ -3,7 +3,7 @@
   <li>
     <span>{{category}}</span>
     <ul>
-      {%- for page in collections[category | slug] %}
+      {%- for page in collections[category | lowercase] %}
       <li>
         <a href="{{page.url}}">
           {{ page.data.title }}
@@ -13,7 +13,4 @@
     </ul>
   </li>
   {%- endfor %}
-</ul>
-
-<ul>
 </ul>

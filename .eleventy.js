@@ -1,3 +1,5 @@
+const { normalize } = require('./utils');
+
 module.exports = function (config) {
 
   config.setLibrary("md", require("markdown-it")({
@@ -23,15 +25,24 @@ module.exports = function (config) {
   /* Filters */
 
   config.addFilter('capitalize', (str) => {
-		return str.trim().toLowerCase()
-      .replace(/\w\S*/g, (w) => (
-        w.replace(/^\w/, (c) => c.toUpperCase())
-      ));
+    if (str)
+      return str.trim().toLowerCase()
+        .replace(/\w\S*/g, (w) => (
+          w.replace(/^\w/, (c) => c.toUpperCase())
+        ));
+	});
+
+  config.addFilter('lowercase', (str) => {
+    if (str)
+      return str.trim().toLowerCase();
 	});
 
   config.addFilter('only', (pages, category) => {
-    console.log(pages[0].url.match(/^\/([^/]*)\//)[1], category)
-		return pages.filter((p) => p.url.match(/^\/([^/]*)\//)[1] === category);
+    if (pages)
+      return pages.filter((p) => (
+        normalize(p.url.match(/^\/([^/]*)\//)[1])
+          .includes(normalize(category))
+      ));
 	});
 
 

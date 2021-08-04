@@ -10,7 +10,7 @@ permalink: 'tag/{{ pagination.items[0] }}/index.html'
 <h1>{{ pagination.items[0] | capitalize }}</h1>
 
 {%- for category in categories %}
-  {% set matchedPages = collections[pagination.items[0] | slug] | only(category | slug) %}
+  {% set matchedPages = collections[pagination.items[0]] | only(category) %}
   {% if matchedPages | length %}
     <span>{{category}}</span>
     <ul class="masonry">
