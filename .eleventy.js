@@ -2,11 +2,26 @@ const { normalize } = require('./utils');
 
 module.exports = function (config) {
 
-  config.setLibrary("md", require("markdown-it")({
-    html: true,
+  /* Plugin Markdown */
+
+  const md = require("markdown-it")({
     breaks: true,
     linkify: true,
-  }));
+  });
+  
+  md.use( require('markdown-it-sub') );
+  md.use( require('markdown-it-sup') );
+  md.use( require('markdown-it-attrs') );
+  md.use( require('markdown-it-anchor') );
+  md.use( require("markdown-it-toc-done-right"), {
+      level: [2, 3, 4, 5]
+  });
+  md.use( require('markdown-it-texmath'), {
+      engine: require('katex'),
+      katexOptions: { displayMode: true }
+  });
+
+  config.setLibrary("md", md);
 
 
   /* Collections */
@@ -49,11 +64,13 @@ module.exports = function (config) {
   /* Passthrough copies */
 
   config.addPassthroughCopy("styles");
+  config.addPassthroughCopy("src/**/*.md");
 
+  
   return {
     dir: {
       input: 'src',
-      output: 'dist',
+      output: 'build',
       layouts: '_layouts',
       includes: '_includes',
       data: '_data'
