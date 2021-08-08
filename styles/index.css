@@ -1,31 +1,5 @@
-.masonry {
-  -webkit-columns: 16rem 4;
-  -moz-columns: 16rem 4;
-  columns: 16rem 4;
-  padding-left: 0;
-}
+@import url('masonry.css');
 
-.masonry > * {
-  display: inline-block;
-  min-width: 16rem;
-  padding-right: 1rem;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid-column;
-}
-
-.masonry ul {
-  padding: 0;
-}
-
-.masonry li {
-  list-style-type: none;
-  margin-bottom: 0.65rem;
-}
-
-.masonry > li > span {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: bold;
+#index h2 {
+  margin-top: 3rem;
 }

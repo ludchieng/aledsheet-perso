@@ -8,10 +8,9 @@
   <link rel="stylesheet" href="/styles/content.css">
   <link rel="stylesheet" href="/styles/fonts.css">
   <link rel="stylesheet" href="/styles/extras.css">
-  <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-  <main>
+  <main class="medium-width">
 
     <nav>
       <a class="go-to-index" href="/index.html">Retour à l'index</a>
@@ -20,7 +19,7 @@
     <header>
       <div class="tags">
         {%- for tag in tags -%}
-          <span>{{tag}}</span>
+          <span><a href="/tag/{{ tag }}">{{ tag }}</a></span>
         {% endfor -%}
       </div>
     </header>

@@ -13,7 +13,7 @@ permalink: 'tag/{{ pagination.items[0] }}/index.html'
   {% set matchedPages = collections[pagination.items[0]] | only(category) %}
   {% if matchedPages | length %}
     <span>{{category}}</span>
-    <ul class="masonry">
+    <ul>
       {%- for page in matchedPages %}
       {% if not page.data.hidden %}
       <li>

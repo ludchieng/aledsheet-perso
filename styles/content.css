@@ -14,10 +14,10 @@ nav {
 main {
   display: block;
   margin: 0 auto;
-  max-width: 40rem;
 }
 
-article {
+article,
+p {
   line-height: 1.5;
 }
 
@@ -75,11 +75,20 @@ pre code {
 
 .tags span {
   display: inline-block;
-  padding: 0.1rem 0.35rem;
+  padding: 0.1rem 0.35rem 0.2rem 0.35rem;
   margin: 0.3rem 0.1rem 0 0;
   font-size: 0.9rem;
   background-color: #282a36;
   border-radius: 0.25rem;
+}
+
+.tags span a {
+  color: inherit;
+  border-color: inherit;
+}
+
+.medium-width {
+  max-width: 40rem;
 }
 
 .large-width {

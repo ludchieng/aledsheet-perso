@@ -7,3 +7,8 @@ a:hover {
   border-color: solid #ff93c7;
   border-bottom-style: solid;
 }
+
+.tags span a:hover {
+  color: #fff;
+  border-color: #fff;
+}
