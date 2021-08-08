@@ -1,4 +1,10 @@
 {
   "title": "Aledsheet",
-  "lang": "fr"
+  "lang": "fr",
+  "author": "Ludwig Chieng",
+  "email": "lud.chieng@hotmail.fr",
+  "github": {
+    "label": "@ludchieng/aledsheet",
+    "href": "https://github.com/ludchieng/aledsheet"
+  }
 }

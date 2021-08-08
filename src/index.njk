@@ -44,9 +44,12 @@
     <hr/>
 
     <footer>
-      <span>Ludwig Chieng</span>
-      <a href="https://github.com/ludchieng/aledsheet">
-        @ludchieng/aledsheet
+      <span>
+        {{ metadata.author }}
+        · <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+      </span>
+      <a href="{{ metadata.github.href }}">
+        {{ metadata.github.label }}
       </a>
     </footer>
 
