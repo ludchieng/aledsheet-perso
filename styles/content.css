@@ -57,28 +57,20 @@ li {
   margin-bottom: 0.3rem;
 }
 
-pre {
-  background-color: #282a36;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25em;
-}
-
 code {
   background-color: #282a36;
   border-radius: 0.25em;
   padding: 0 0.2em;
 }
 
-.code {
-  margin: 1rem -0.75rem;
-  padding: 0.75rem;
+pre {
   background-color: #282a36;
-  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25em;
 }
 
-.code code {
-  padding: initial;
-  color: #e3e8ee;
+pre code {
+  padding: 0;
 }
 
 .tags span {
