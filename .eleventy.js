@@ -5,7 +5,6 @@ module.exports = function (config) {
   /* Plugin Markdown */
 
   const md = require("markdown-it")({
-    html: true,
     breaks: true,
     linkify: true,
   });
@@ -21,7 +20,7 @@ module.exports = function (config) {
       level: [2, 3, 4, 5],
       slugify,
   });
-  
+
   md.use( require('markdown-it-texmath'), {
       engine: require('katex'),
       katexOptions: {
@@ -75,6 +74,7 @@ module.exports = function (config) {
   /* Passthrough copies */
 
   config.addPassthroughCopy("styles");
+  config.addPassthroughCopy("assets");
   config.addPassthroughCopy("src/**/*.md");
 
   
