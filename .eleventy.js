@@ -54,7 +54,9 @@ module.exports = function (config) {
 
   config.addFilter('only', (pages, category) => {
     if (pages)
-      return pages.filter((p) => (
+      return pages
+      .filter((p) => !p.data.hidden)
+      .filter((p) => (
         normalize(p.url.match(/^\/([^/]*)\//)[1])
           .includes(normalize(category))
       ));

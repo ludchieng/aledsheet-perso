@@ -15,11 +15,13 @@ permalink: 'tag/{{ pagination.items[0] }}/index.html'
     <span>{{category}}</span>
     <ul class="masonry">
       {%- for page in matchedPages %}
+      {% if not page.data.hidden %}
       <li>
         <a href="{{page.url}}">
           {{ page.data.title }}
         </a>
       </li>
+      {% endif %}
       {%- endfor %}
     </ul>
   {% endif %}
