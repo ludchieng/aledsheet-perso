@@ -1,10 +1,11 @@
-const { normalize } = require('./utils');
+const { normalize, slugify } = require('./utils');
 
 module.exports = function (config) {
 
   /* Plugin Markdown */
 
   const md = require("markdown-it")({
+    html: true,
     breaks: true,
     linkify: true,
   });
@@ -12,13 +13,21 @@ module.exports = function (config) {
   md.use( require('markdown-it-sub') );
   md.use( require('markdown-it-sup') );
   md.use( require('markdown-it-attrs') );
-  md.use( require('markdown-it-anchor') );
-  md.use( require("markdown-it-toc-done-right"), {
-      level: [2, 3, 4, 5]
+  md.use( require('markdown-it-anchor'), {
+    slugify
   });
+
+  md.use( require("markdown-it-toc-done-right"), {
+      level: [2, 3, 4, 5],
+      slugify,
+  });
+  
   md.use( require('markdown-it-texmath'), {
       engine: require('katex'),
-      katexOptions: { displayMode: true }
+      katexOptions: {
+        displayMode: true,
+        output: 'mathml'
+      }
   });
 
   config.setLibrary("md", md);

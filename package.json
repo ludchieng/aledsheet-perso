@@ -10,11 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "markdown-it": "^12.2.0"
-  },
-  "dependencies": {
-    "html-format": "^1.0.1",
     "katex": "^0.13.13",
+    "markdown-it": "^12.2.0",
     "markdown-it-anchor": "^8.1.2",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-sub": "^1.0.0",

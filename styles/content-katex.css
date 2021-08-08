@@ -5,7 +5,3 @@
 .katex mrow {
   user-select: none;
 }
-
-.katex-html {
-  display: none;
-}

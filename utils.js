@@ -6,7 +6,12 @@ const normalize = (str) => (
   rmDiacritics(str.trim().toLowerCase())
 );
 
+const slugify = (str) => (
+  encodeURIComponent(normalize(str).replace(/[?!,\.:/\\\s]+/g, '-'))
+)
+
 module.exports = {
   rmDiacritics,
   normalize,
+  slugify,
 };
