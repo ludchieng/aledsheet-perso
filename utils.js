@@ -7,7 +7,7 @@ const normalize = (str) => (
 );
 
 const slugify = (str) => (
-  encodeURIComponent(normalize(str).replace(/[?!,\.:/\\\s]+/g, '-'))
+  encodeURIComponent(normalize(str).replace(/[?!'"«»,\.:/\\()&%*\s]+/g, '-'))
 )
 
 module.exports = {
