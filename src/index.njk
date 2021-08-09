@@ -14,24 +14,18 @@
   <main class="large-width">
   
     <header>
-      <h1>Aledsheet</h1>
+      <h1>Aledsheet 🏰</h1>
     </header>
 
     <hr/>
 
+    {%- if metadata.greetings %}
     <section>
-      <p>Bienvenue dans mon palais mental 🏰</p>
       <p>
-        Bien le bonjour ! Ici se trouvent des cheatsheets personnelles sur
-        pleins de sujets 😎
-      </p>
-      <p>
-        Je ne garantie pas à 100% l'exactitude des informations données ici.
-        Aussi, je donne souvent mon opinion entre deux éléments factuels. Je
-        compte sur vous pour distinguer les faits de l'interprétation
-        personnelle que j'en fait.
+        {{ metadata.greetings }}
       </p>
     </section>
+    {%- endif %}
 
     <h2>Catégories</h2>
 
