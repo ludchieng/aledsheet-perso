@@ -49,9 +49,9 @@ module.exports = function (config) {
 
   config.addFilter('capitalize', (str) => {
     if (str)
-      return str.trim().toLowerCase()
-        .replace(/\w\S*/g, (w) => (
-          w.replace(/^\w/, (c) => c.toUpperCase())
+      return str.trim()
+        .replace(/^(.)(.*)$/, (all, first, others) => (
+          first.toUpperCase() + others.toLowerCase()
         ));
 	});
 
