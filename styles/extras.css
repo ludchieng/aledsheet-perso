@@ -1,0 +1,9 @@
+::selection {
+  background-color: #2e3749;
+}
+
+a:hover {
+  color: #ff93c7;
+  border-color: solid #ff93c7;
+  border-bottom-style: solid;
+}

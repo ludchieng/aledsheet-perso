@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  bold;
+  font-weight: 700;
+  src: url("fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  src: url("fonts/Inter-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style:  normal;
+  font-weight: 400;
+  font-size: large;
+  src: url("fonts/FiraCode-Regular.ttf");
+}
+
+body {
+  font-family: Inter;
+}
+
+code {
+  font-family: 'Fira Code';
+  font-size: 0.8rem;
+}

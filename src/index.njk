@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ metadata.title }}</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/styles/content.css">
+  <link rel="stylesheet" href="/styles/fonts.css">
+  <link rel="stylesheet" href="/styles/extras.css">
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+  <main class="large-width">
+  
+    <header>
+      <h1>Aledsheet</h1>
+    </header>
+
+    <hr/>
+
+    <h2>Catégories</h2>
+
+    {% include "categories.njk" %}
+
+    <h2>Mots-clés</h2>
+
+    {% include "keywords.njk" %}
+
+    <hr/>
+
+    <footer>
+      <span>Ludwig Chieng</span>
+      <a href="https://github.com/ludchieng/aledsheet">
+        @ludchieng/aledsheet
+      </a>
+    </footer>
+
+  </main>
+</body>
+</html>
