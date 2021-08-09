@@ -1,6 +1,13 @@
-.katex {
+section > eqn > .katex {
+  display: block;
+  padding-bottom: 0.5rem;
   font-size: 1.1rem;
+  overflow-x: visible;
+  overflow-y: hidden;
+  scrollbar-color: #0004 transparent;
+  scrollbar-width: thin;
 }
+
 
 .katex mrow {
   user-select: none;
