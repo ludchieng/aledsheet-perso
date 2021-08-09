@@ -1,15 +1,15 @@
 .masonry {
-  -webkit-columns: 16rem 4;
-  -moz-columns: 16rem 4;
-  columns: 16rem 4;
+  -webkit-columns: 14rem 4;
+  -moz-columns: 14rem 4;
+  columns: 14rem 4;
   padding-left: 0;
   font-size: 0.95rem;
 }
 
 .masonry > * {
   display: inline-block;
-  min-width: 12rem;
-  padding-right: 2rem;
+  width: 14rem;
+  padding-right: 4rem; /* force wrap */
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid-column;
