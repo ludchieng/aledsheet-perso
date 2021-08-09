@@ -9,12 +9,18 @@ permalink: 'tag/{{ pagination.items[0] }}/index.html'
 
 <h1>{{ pagination.items[0] | capitalize }}</h1>
 
-<ul class="masonry">
-  {%- for page in collections[pagination.items[0] | slug] %}
-  <li>
-    <a href="{{page.url}}">
-      {{ page.data.title }}
-    </a>
-  </li>
-  {%- endfor %}
-</ul>
+{%- for category in categories %}
+  {% set matchedPages = collections[pagination.items[0] | slug] | only(category | slug) %}
+  {% if matchedPages | length %}
+    <span>{{category}}</span>
+    <ul class="masonry">
+      {%- for page in matchedPages %}
+      <li>
+        <a href="{{page.url}}">
+          {{ page.data.title }}
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  {% endif %}
+{%- endfor %}

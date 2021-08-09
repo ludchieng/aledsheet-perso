@@ -6,6 +6,9 @@ module.exports = function (config) {
     linkify: true,
   }));
 
+
+  /* Collections */
+
   config.addCollection('pageTags', (collections) => {
 		const uniqueTags = [...new Set(collections
 			.getAll()
@@ -15,6 +18,10 @@ module.exports = function (config) {
 			.sort())];
 		return uniqueTags;
 	});
+
+
+  /* Filters */
+
   config.addFilter('capitalize', (str) => {
 		return str.trim().toLowerCase()
       .replace(/\w\S*/g, (w) => (
@@ -22,6 +29,13 @@ module.exports = function (config) {
       ));
 	});
 
+  config.addFilter('only', (pages, category) => {
+    console.log(pages[0].url.match(/^\/([^/]*)\//)[1], category)
+		return pages.filter((p) => p.url.match(/^\/([^/]*)\//)[1] === category);
+	});
+
+
+  /* Passthrough copies */
 
   config.addPassthroughCopy("styles");
 
