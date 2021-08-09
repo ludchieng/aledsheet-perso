@@ -1,0 +1,7 @@
+.katex {
+  font-size: 1.1rem;
+}
+
+.katex mrow {
+  user-select: none;
+}

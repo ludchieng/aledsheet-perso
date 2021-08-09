@@ -1,0 +1,5 @@
+<ul class="masonry">
+  {%- for tag in collections.pageTags %}
+    <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+  {%- endfor %}
+</ul>

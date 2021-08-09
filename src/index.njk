@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ metadata.title }}</title>
+  <link rel="icon" type="image/png" href="{{ metadata.favicon }}">
+  <link rel="stylesheet" href="/styles/content.css">
+  <link rel="stylesheet" href="/styles/fonts.css">
+  <link rel="stylesheet" href="/styles/extras.css">
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body id="index">
+  <main class="large-width">
+  
+    <header>
+      <h1>Aledsheet 🏰</h1>
+    </header>
+
+    <hr/>
+
+    {%- if metadata.greetings %}
+    <section>
+      <p>
+        {{ metadata.greetings }}
+      </p>
+    </section>
+    {%- endif %}
+
+    <h2>Catégories</h2>
+
+    {% include "categories.njk" %}
+
+    <h2>Mots-clés</h2>
+
+    {% include "tags.njk" %}
+
+    <hr/>
+
+    <footer>
+      <span>
+        {{ metadata.author }}
+        · <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+      </span>
+      <a href="{{ metadata.github.href }}">
+        {{ metadata.github.label }}
+      </a>
+    </footer>
+
+  </main>
+</body>
+</html>

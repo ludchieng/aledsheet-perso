@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ metadata.title }}</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/styles/content.css">
+  <link rel="stylesheet" href="/styles/fonts.css">
+  <link rel="stylesheet" href="/styles/extras.css">
+</head>
+<body>
+  <main class="medium-width">
+
+    <nav>
+      <a class="go-to-index" href="/index.html">Retour à l'index</a>
+    </nav>
+
+    <header>
+      <div class="tags">
+        {%- for tag in tags -%}
+          <span><a href="/tag/{{ tag }}">{{ tag }}</a></span>
+        {% endfor -%}
+      </div>
+    </header>
+
+    <hr/>
+
+    <article>
+      {{ content | safe }}
+    </article>
+
+    <nav>
+      <a class="go-to-index" href="/index.html">Retour à l'index</a>
+    </nav>
+
+    <hr/>
+
+    <footer>
+      {%- if author | length %}
+        <span>
+          Rédigé par {{author}}
+        </span>
+      {%- endif %}
+      <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
+        @ludchieng/aledsheet
+      </a>
+    </footer>
+
+  </main>
+</body>
+</html>

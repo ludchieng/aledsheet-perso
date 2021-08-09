@@ -1,0 +1,24 @@
+nav ol {
+  list-style:none;
+  counter-reset: item;
+}
+
+nav ol li {
+  display:block;
+}
+
+nav > ol > li {
+  margin-bottom: 1rem;
+}
+
+nav > ol > li > ol {
+  margin-top: 0.25rem;
+}
+
+nav ol > li {
+  counter-increment: item;
+}
+
+nav ol > li:before {
+  content:counters(item, ".") ". ";
+}

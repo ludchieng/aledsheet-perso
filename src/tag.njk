@@ -1,0 +1,28 @@
+---
+layout: sheet.njk
+
+pagination:
+  data: collections.pageTags
+  size: 1
+permalink: 'tag/{{ pagination.items[0] }}/index.html'
+---
+
+<h1>{{ pagination.items[0] | capitalize }}</h1>
+
+{%- for category in categories %}
+  {% set matchedPages = collections[pagination.items[0]] | only(category) %}
+  {% if matchedPages | length %}
+    <span>{{category}}</span>
+    <ul>
+      {%- for page in matchedPages %}
+      {% if not page.data.hidden %}
+      <li>
+        <a href="{{page.url}}">
+          {{ page.data.title }}
+        </a>
+      </li>
+      {% endif %}
+      {%- endfor %}
+    </ul>
+  {% endif %}
+{%- endfor %}

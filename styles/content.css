@@ -1,0 +1,121 @@
+@import url('content-katex.css');
+@import url('content-toc.css');
+
+body {
+  background-color: #1a202c;
+  color: #cbd5e0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+nav {
+  margin: 1rem auto;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+}
+
+article,
+p {
+  line-height: 1.5;
+}
+
+main footer {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+}
+
+.go-to-github {
+  margin-left: auto;
+}
+
+b, strong,
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+a {
+  color: #ed64a6;
+  text-decoration: none;
+  border-bottom: dotted 1px #ed64a6;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #666;
+}
+
+ul, ol {
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+code {
+  background-color: #282a36;
+  border-radius: 0.25em;
+  padding: 0 0.2em;
+}
+
+pre {
+  background-color: #282a36;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25em;
+}
+
+pre code {
+  padding: 0;
+}
+
+.tags span {
+  display: inline-block;
+  padding: 0.1rem 0.35rem 0.2rem 0.35rem;
+  margin: 0.3rem 0.1rem 0 0;
+  font-size: 0.9rem;
+  background-color: #282a36;
+  border-radius: 0.25rem;
+}
+
+.tags span a {
+  color: inherit;
+  border-color: inherit;
+}
+
+.medium-width {
+  max-width: 40rem;
+}
+
+.large-width {
+  max-width: 72rem;
+}
+
+table {
+  overflow: auto;
+  margin: 2rem 0;
+  border-spacing: 0;
+}
+
+th {
+  background-color: #232833;
+}
+
+th,
+td {
+  border: 1px solid #2c2e3a;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+tr {
+  background-color: #232833;
+}
+
+tr:nth-child(2n+1) {
+  background-color: transparent;
+}
