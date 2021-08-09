@@ -2,29 +2,29 @@
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 400;
-  src: url("fonts/Inter-Regular.ttf");
+  src: url("fonts/Inter-latin-Regular.woff2");
 }
 
 @font-face {
   font-family: 'Inter';
   font-style:  bold;
   font-weight: 700;
-  src: url("fonts/Inter-Bold.ttf");
+  src: url("fonts/Inter-latin-Bold.woff2");
 }
 
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
   font-weight: 400;
-  src: url("fonts/Inter-Italic.ttf");
+  src: url("fonts/Inter-latin-Italic.woff2");
 }
 
 @font-face {
-  font-family: 'Fira Code';
+  font-family: 'Fira Mono';
   font-style:  normal;
   font-weight: 400;
   font-size: large;
-  src: url("fonts/FiraCode-Regular.ttf");
+  src: url("fonts/Fira-Mono-latin-Regular.woff2");
 }
 
 body {
@@ -32,6 +32,6 @@ body {
 }
 
 code {
-  font-family: 'Fira Code';
+  font-family: 'Fira Mono';
   font-size: 0.8em;
 }
