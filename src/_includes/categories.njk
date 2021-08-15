@@ -3,8 +3,10 @@
   <li>
     <span>{{category}}</span>
     <ul>
-      {%- for page in collections[category | lowercase] %}
-      {%- if not page.data.hidden %}
+      {%- for page in collections.all %}
+      {%- if page.data.category === (category | lowercase)
+            and not page.data.hidden
+      %}
       <li><a href="{{page.url}}">{{ page.data.title }}</a></li>
       {%- endif %}
       {%- endfor %}
