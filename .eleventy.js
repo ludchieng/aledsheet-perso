@@ -1,4 +1,4 @@
-const { normalize, slugify } = require('./utils');
+const { slugify } = require('./utils');
 
 module.exports = function (config) {
 
@@ -6,7 +6,6 @@ module.exports = function (config) {
 
   const md = require("markdown-it")({
     breaks: true,
-    linkify: true,
   });
   
   md.use( require('markdown-it-sub') );
@@ -17,8 +16,30 @@ module.exports = function (config) {
   });
 
   md.use( require("markdown-it-toc-done-right"), {
-      level: [2, 3, 4, 5],
-      slugify,
+    level: [2, 3, 4, 5],
+    slugify,
+  });
+
+  md.use( require('markdown-it-container'), 'details', {
+    validate: function(params) {
+      return params.trim().match(/^details\s+\[(.*)\]$/);
+    },
+  
+    render: function (tokens, idx) {
+      const m = tokens[idx].info.trim().match(/^details\s+\[(.*)\]$/);
+  
+      if (tokens[idx].nesting === 1) {
+        // opening tag
+        return "<details>\n"
+          + '  <summary>\n'
+          + `    <span>${md.utils.escapeHtml(m[1])}</span>\n`
+          + '  </summary>\n'
+          + '  <div>\n';
+      } else {
+        // closing tag
+        return '  </div>\n</details>\n';
+      }
+    }
   });
 
   md.use( require('markdown-it-texmath'), {
@@ -49,9 +70,9 @@ module.exports = function (config) {
 
   config.addFilter('capitalize', (str) => {
     if (str)
-      return str.trim().toLowerCase()
-        .replace(/\w\S*/g, (w) => (
-          w.replace(/^\w/, (c) => c.toUpperCase())
+      return str.trim()
+        .replace(/^(.)(.*)$/, (all, first, others) => (
+          first.toUpperCase() + others.toLowerCase()
         ));
 	});
 
@@ -65,8 +86,7 @@ module.exports = function (config) {
       return pages
       .filter((p) => !p.data.hidden)
       .filter((p) => (
-        normalize(p.url.match(/^\/([^/]*)\//)[1])
-          .includes(normalize(category))
+        p.data.category === category
       ));
 	});
 

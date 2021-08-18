@@ -18,5 +18,8 @@
     "markdown-it-sup": "^1.0.0",
     "markdown-it-texmath": "^0.9.1",
     "markdown-it-toc-done-right": "^4.2.0"
+  },
+  "dependencies": {
+    "markdown-it-container": "^3.0.0"
   }
 }

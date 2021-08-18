@@ -21,6 +21,10 @@ p {
   line-height: 1.5;
 }
 
+p {
+  margin: 0 auto 1rem auto;
+}
+
 main footer {
   display: flex;
   margin-top: 1rem;
@@ -36,6 +40,11 @@ b, strong,
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
+
+h2 { margin: 2rem auto 0.7rem auto; }
+h3 { margin: 1.5rem auto 0.4rem auto; }
+h4 { margin: 1.2rem auto 0.3rem auto; }
+h5 { margin: 1rem auto 0.2rem auto; }
 
 a {
   color: #ed64a6;
@@ -67,6 +76,7 @@ pre {
   background-color: #282a36;
   padding: 0.5rem 1rem;
   border-radius: 0.25em;
+  overflow-x: auto;
 }
 
 pre code {
@@ -96,9 +106,10 @@ pre code {
 }
 
 table {
-  overflow: auto;
+  display: block;
   margin: 2rem 0;
   border-spacing: 0;
+  overflow-x: auto;
 }
 
 th {
@@ -118,4 +129,24 @@ tr {
 
 tr:nth-child(2n+1) {
   background-color: transparent;
+}
+
+details {
+  margin: 0.5rem 0.5rem 1rem 0;
+}
+
+details > div {
+  margin-left:  0.24rem;
+  padding: 0.35rem 0 0 0.91rem;
+  border-left: 1px dotted #cbd5e0;
+}
+
+summary {
+  cursor: pointer;
+  user-select: none;
+}
+
+summary > span {
+  color: #aaa;
+  border-bottom: dotted 1px #aaa;
 }

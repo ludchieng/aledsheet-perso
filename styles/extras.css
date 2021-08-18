@@ -12,3 +12,30 @@ a:hover {
   color: #fff;
   border-color: #fff;
 }
+
+summary:hover span {
+  color: #fff;
+  border-color: #fff;
+  border-bottom-style: solid;
+}
+section > eqn > .katex,
+table {
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1e24; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #858686; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+

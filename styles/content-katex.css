@@ -1,6 +1,11 @@
-.katex {
+section > eqn > .katex {
+  display: block;
+  padding-bottom: 0.5rem;
   font-size: 1.1rem;
+  overflow-x: visible;
+  overflow-y: hidden;
 }
+
 
 .katex mrow {
   user-select: none;
