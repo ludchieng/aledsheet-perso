@@ -12,15 +12,11 @@
 <body>
   <main class="medium-width">
 
-    {% include "nav.njk" %}
-
-    <header>
-      <div class="tags">
-        {%- for tag in tags -%}
-          <span><a href="/tag/{{ tag }}">{{ tag }}</a></span>
-        {% endfor -%}
+    <nav>
+      <div class="go-to-index">
+        <a href="/index.html">Retour à l'index</a>
       </div>
-    </header>
+    </nav>
 
     <hr/>
 
@@ -28,20 +24,18 @@
       {{ content | safe }}
     </article>
 
+    <nav>
+      <div class="go-to-index">
+        <a href="/index.html">Retour à l'index</a>
+      </div>
+    </nav>
+
     <hr/>
 
     <footer>
-      <div>
-        {%- if author | length %}
-          <span>
-            Rédigé par {{ author }}
-          </span>
-        {%- endif %}
-        <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
-          @ludchieng/aledsheet
-        </a>
-      </div>
-      {% include "nav.njk" %}
+      <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
+        @ludchieng/aledsheet
+      </a>
     </footer>
 
   </main>

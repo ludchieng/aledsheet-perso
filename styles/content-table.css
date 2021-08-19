@@ -1,0 +1,25 @@
+table {
+  display: block;
+  margin: 2rem 0;
+  border-spacing: 0;
+  overflow-x: auto;
+}
+
+th {
+  background-color: #232833;
+}
+
+th,
+td {
+  border: 1px solid #2c2e3a;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+tr {
+  background-color: #232833;
+}
+
+tr:nth-child(2n+1) {
+  background-color: transparent;
+}
