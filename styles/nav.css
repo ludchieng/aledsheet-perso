@@ -1,0 +1,47 @@
+nav.nav-page {
+  display: flex;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.go-to-index {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.go-to-prev,
+.go-to-next {
+  padding-top: 0.2rem;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.go-to-prev div,
+.go-to-next div {
+  padding-bottom: 0.2rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.go-to-prev > span {
+  position: absolute;
+  transform: translateX(-1.25rem);
+}
+.go-to-next > span {
+  position: absolute;
+  transform: translateX(0.25rem);
+}
+
+.go-to-prev {
+  text-align: left;
+}
+
+.go-to-next {
+  text-align: right;
+}

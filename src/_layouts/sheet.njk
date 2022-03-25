@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ metadata.title }}</title>
-  <link rel="icon" href="data:,">
+  <title>{{ title }} · {{ metadata.appname }}</title>
+  <link rel="icon" type="image/png" href="{{ metadata.favicon }}">
   <link rel="stylesheet" href="/styles/content.css">
   <link rel="stylesheet" href="/styles/fonts.css">
   <link rel="stylesheet" href="/styles/extras.css">
+  <link rel="stylesheet" href="/styles/code-highlight.css">
 </head>
 <body>
   <main class="medium-width">
 
-    <nav>
-      <a class="go-to-index" href="/index.html">Retour à l'index</a>
-    </nav>
+    {% include "nav.njk" %}
 
     <header>
       <div class="tags">
@@ -30,21 +29,20 @@
       {{ content | safe }}
     </article>
 
-    <nav>
-      <a class="go-to-index" href="/index.html">Retour à l'index</a>
-    </nav>
-
     <hr/>
 
     <footer>
-      {%- if author | length %}
-        <span>
-          Rédigé par {{author}}
-        </span>
-      {%- endif %}
-      <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
-        @ludchieng/aledsheet
-      </a>
+      <div>
+        {%- if author | length %}
+          <span>
+            Rédigé par {{ author }}
+          </span>
+        {%- endif %}
+        <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
+          @ludchieng/aledsheet
+        </a>
+      </div>
+      {% include "nav.njk" %}
     </footer>
 
   </main>

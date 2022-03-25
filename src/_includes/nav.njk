@@ -1,0 +1,27 @@
+{% set pages = collections.all | only(category) | getNextPrevOf(page.url) %}
+
+<nav class="nav-page">
+
+  <div class="go-to-index">
+    <a href="/index.html">Retour à l'index</a>
+  </div>
+
+  {%- if pages.prev %}
+  <div class="go-to-prev">
+    <span>〈</span>
+    <div>
+      <a href="{{ pages.prev.url }}">{{ pages.prev.data.title }}</a>
+    </div>
+  </div>
+  {% endif -%}
+
+  {%- if pages.next %}
+  <div class="go-to-next">
+    <span>〉</span>
+    <div>
+      <a href="{{ pages.next.url }}">{{ pages.next.data.title }}</a>
+    </div>
+  </div>
+  {% endif -%}
+
+</nav>

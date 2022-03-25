@@ -1,0 +1,26 @@
+body {
+  margin: 0 1.2rem;
+  background-color: #1a202c;
+  color: #cbd5e0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+}
+
+article {
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+}
+
+footer > div {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}

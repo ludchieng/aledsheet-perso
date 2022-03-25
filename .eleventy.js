@@ -1,4 +1,5 @@
 const { slugify } = require('./utils');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (config) {
 
@@ -81,6 +82,10 @@ module.exports = function (config) {
       return str.trim().toLowerCase();
 	});
 
+  
+  /**
+   * Returns a subset of pages of the specified category
+   */
   config.addFilter('only', (pages, category) => {
     if (pages)
       return pages
@@ -89,6 +94,36 @@ module.exports = function (config) {
         p.data.category === category
       ));
 	});
+
+
+  /**
+   * Extract previous and next page of a collection of pages
+   */
+  config.addFilter('getNextPrevOf', (pages, url) => {
+    if (!pages)
+      return;
+
+    let wasFound = false;
+    const idx = pages.reduce((counter, p) => {
+      if (wasFound)
+        return counter;
+      wasFound = p.url === url;
+      return !wasFound ? ++counter : counter
+    }, 0)
+    if (wasFound) {
+      return {
+        prev: pages[idx-1],
+        next: pages[idx+1],
+      }
+    }
+  })
+
+
+  
+
+  config.addPlugin(syntaxHighlight, {
+    alwaysWrapLineHighlights: false
+});
 
 
   /* Passthrough copies */

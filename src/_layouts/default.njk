@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ metadata.appname }}</title>
+  <link rel="icon" type="image/png" href="{{ metadata.favicon }}">
+  <link rel="stylesheet" href="/styles/content.css">
+  <link rel="stylesheet" href="/styles/fonts.css">
+  <link rel="stylesheet" href="/styles/extras.css">
+</head>
+<body>
+  <main class="medium-width">
+
+    <nav>
+      <div class="go-to-index">
+        <a href="/index.html">Retour à l'index</a>
+      </div>
+    </nav>
+
+    <hr/>
+
+    <article>
+      {{ content | safe }}
+    </article>
+
+    <nav>
+      <div class="go-to-index">
+        <a href="/index.html">Retour à l'index</a>
+      </div>
+    </nav>
+
+    <hr/>
+
+    <footer>
+      <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
+        @ludchieng/aledsheet
+      </a>
+    </footer>
+
+  </main>
+</body>
+</html>
