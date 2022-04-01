@@ -4,7 +4,8 @@
   "description": "Cheatsheets collection static website",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "build": "eleventy --output=./build"
   },
   "author": "Ludwig Chieng",
   "license": "MIT",
