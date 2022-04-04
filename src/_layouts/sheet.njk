@@ -36,14 +36,24 @@
 
     <footer>
       <div>
-        {%- if author | length %}
+        <div>
+          {%- if author | length %}
           <span>
             Rédigé par {{ author }}
           </span>
-        {%- endif %}
-        <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
-          @ludchieng/aledsheet
-        </a>
+          {%- endif %}
+          {%- if basedOn | length %}
+          <br/>
+          <span>
+            Basé sur {{ basedOn }}
+          </span>
+          {%- endif %}
+        </div>
+        <div>
+          <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
+            @ludchieng/aledsheet
+          </a>
+        </div>
       </div>
       {% include "nav.njk" %}
     </footer>

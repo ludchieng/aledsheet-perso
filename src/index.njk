@@ -38,13 +38,15 @@
     <hr/>
 
     <footer>
-      <span>
-        {{ metadata.author }}
-        · <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
-      </span>
-      <a href="{{ metadata.github.href }}">
-        {{ metadata.github.label }}
-      </a>
+      <div>
+        <span>
+          {{ metadata.author }}
+          · <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+        </span>
+        <a href="{{ metadata.github.href }}">
+          {{ metadata.github.label }}
+        </a>
+      </div>
     </footer>
 
   </main>
