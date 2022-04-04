@@ -6,7 +6,6 @@
 @import url('utils.css');
 
 p {
-  line-height: 1.5;
   margin: 0 auto 1rem auto;
 }
 
@@ -63,6 +62,10 @@ pre {
 
 pre code {
   padding: 0;
+}
+
+.tags {
+  margin-bottom: 0.5rem;
 }
 
 .tags span {
