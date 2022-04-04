@@ -82,6 +82,15 @@ module.exports = function (config) {
       return str.trim().toLowerCase();
 	});
 
+  config.addFilter('date', (str) => {
+    if (str)
+      return (new Date(str)).toLocaleDateString("fr-FR", {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+      });
+	});
+
   
   /**
    * Returns a subset of pages of the specified category
