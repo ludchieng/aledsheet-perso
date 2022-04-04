@@ -12,11 +12,7 @@
 <body>
   <main class="medium-width">
 
-    <nav>
-      <div class="go-to-index">
-        <a href="/index.html">Retour à l'index</a>
-      </div>
-    </nav>
+    {% include "nav.njk" %}
 
     <hr/>
 
@@ -24,18 +20,15 @@
       {{ content | safe }}
     </article>
 
-    <nav>
-      <div class="go-to-index">
-        <a href="/index.html">Retour à l'index</a>
-      </div>
-    </nav>
-
     <hr/>
 
     <footer>
-      <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
-        @ludchieng/aledsheet
-      </a>
+      <div>
+        <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
+          @ludchieng/aledsheet
+        </a>
+      </div>
+      {% include "nav.njk" %}
     </footer>
 
   </main>
