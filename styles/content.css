@@ -36,6 +36,14 @@ ul, ol {
   padding-left: 1rem;
 }
 
+p + ul, p + ol {
+  margin-top: -0.5rem;
+}
+
+ul ul {
+  list-style-type: symbols('–');
+}
+
 li {
   margin-bottom: 0.3rem;
 }
