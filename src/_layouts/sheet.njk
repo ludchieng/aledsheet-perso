@@ -6,8 +6,12 @@
   <title>{{ title }} · {{ metadata.appname }}</title>
   <link rel="icon" type="image/png" href="{{ metadata.favicon }}">
   <link rel="stylesheet" href="/styles/content.css">
+{%- if config.styles.fonts %}
   <link rel="stylesheet" href="/styles/fonts.css">
+{%- endif %}
+{%- if config.styles.extras %}
   <link rel="stylesheet" href="/styles/extras.css">
+{%- endif %}
   <link rel="stylesheet" href="/styles/code-highlight.css">
 </head>
 <body>
