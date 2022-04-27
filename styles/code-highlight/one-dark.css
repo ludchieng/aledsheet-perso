@@ -32,7 +32,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   background-color: #282a36;
   color: hsl(218, 39%, 90%);
-  font-family: 'Consolas';
+  font-family: 'Consolas', monospace;
   font-size: 0.9rem;
   direction: ltr;
   text-align: left;
