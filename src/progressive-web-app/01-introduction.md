@@ -1,9 +1,10 @@
 ---
 title: 01. Introduction aux PWA
 author: Ludwig Chieng
+basedOn: le MOOC de Maximilian Schwarzmüller
 category: Progressive Web App
 tags: [web, mobile, progressive web app]
-licence: (c)
+licence: potentiellement (c) par les auteurs d'origine
 
 layout: sheet
 ---

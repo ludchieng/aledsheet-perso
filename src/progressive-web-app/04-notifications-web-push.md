@@ -1,9 +1,10 @@
 ---
 title: 04. Notifications Web Push
 author: Ludwig Chieng
+basedOn: le MOOC de Maximilian Schwarzmüller
 category: Progressive Web App
 tags: [web, mobile, progressive web app, service worker]
-licence: (c)
+licence: potentiellement (c) par les auteurs d'origine
 
 layout: sheet
 ---

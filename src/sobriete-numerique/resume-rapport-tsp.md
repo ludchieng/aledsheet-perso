@@ -1,9 +1,10 @@
 ---
 title: Résumé du rapport « Déployer la sobriété numérique » de TSP
 author: Ludwig Chieng
+basedOn: les travaux du Shift Project
 category: Sobriété numérique
 tags: [logiciel, application, web, sobriété, numérique]
-licence: CC-BY-SA
+licence: potentiellement (c) par les auteurs d'origine
 
 layout: sheet
 ---

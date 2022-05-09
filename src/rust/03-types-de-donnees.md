@@ -1,9 +1,10 @@
 ---
 title: 03. Types de données
 author: Ludwig Chieng
+basedOn: le MOOC de Catalin Stefan
 category: Rust
 tags: [logiciel, application, web, rust]
-licence: CC-BY-SA
+licence: potentiellement (c) par les auteurs d'origine
 
 layout: sheet
 ---

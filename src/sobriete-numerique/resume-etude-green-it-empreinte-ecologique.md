@@ -1,9 +1,10 @@
 ---
 title: Résumé de l'étude « Empreinte environnementale du numérique mondial (2019) » de GreenIT
 author: Ludwig Chieng
+basedOn: les travaux de GreenIT
 category: Sobriété numérique
 tags: [logiciel, application, web, sobriété, numérique]
-licence: CC-BY-SA
+licence: potentiellement (c) par les auteurs d'origine
 
 layout: sheet
 ---
