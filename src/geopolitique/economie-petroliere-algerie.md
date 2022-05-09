@@ -2,7 +2,7 @@
 title: Économie pétrolière de l'Algérie
 author: Ludwig Chieng
 category: Géopolitique
-tags: []
+tags: [économie, pétrole, gaz, algérie]
 licence: CC-BY-SA Ludwig Chieng
 
 layout: sheet
