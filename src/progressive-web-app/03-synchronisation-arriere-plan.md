@@ -36,10 +36,7 @@ if ('serviceWorker' in navigator && 'SyncManager' in window) {
           return sw.sync.register('sync-new-posts');
         })
         .then(function() {
-          // Show toast message
-          var snackbarContainer = document.querySelector('#confirmation-toast');
-          var data = {message: 'Your Post was saved for syncing!'};
-          snackbarContainer.MaterialSnackbar.showSnackbar(data);
+          // Trigger UI feedback (e.g. Show toast message)
         })
         .catch(function(err) {
           console.log(err);
