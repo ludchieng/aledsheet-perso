@@ -1,5 +1,5 @@
 ---
-title: Naviguer dans les répertoires
+title: 07. Naviguer dans les répertoires
 author: Ludwig Chieng
 category: Linux-Debian
 tags: [linux, debian, ubuntu, mint, commandes, terminal, shell, bash]

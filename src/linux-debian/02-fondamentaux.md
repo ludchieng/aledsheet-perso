@@ -1,5 +1,5 @@
 ---
-title: Fondamentaux de Linux Debian
+title: 02. Fondamentaux de Linux Debian
 author: Ludwig Chieng
 category: Linux-Debian
 tags: [linux, debian, ubuntu, mint]

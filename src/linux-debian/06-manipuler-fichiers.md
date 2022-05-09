@@ -1,5 +1,5 @@
 ---
-title: Manipuler les fichiers
+title: 06. Manipuler les fichiers
 author: Ludwig Chieng
 category: Linux-Debian
 tags: [linux, debian, ubuntu, mint, commandes, terminal, shell, bash]

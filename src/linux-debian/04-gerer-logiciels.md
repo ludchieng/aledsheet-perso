@@ -1,5 +1,5 @@
 ---
-title: Gérer les logiciels
+title: 04. Gérer les logiciels
 author: Ludwig Chieng
 category: Linux-Debian
 tags: [linux, debian, ubuntu, mint, commandes, terminal, shell, bash]

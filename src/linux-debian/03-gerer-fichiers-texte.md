@@ -1,5 +1,5 @@
 ---
-title: Gérer les fichiers texte
+title: 03. Gérer les fichiers texte
 author: Ludwig Chieng
 category: Linux-Debian
 tags: [linux, debian, ubuntu, mint, commandes, terminal, shell, bash]

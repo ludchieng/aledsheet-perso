@@ -1,5 +1,5 @@
 ---
-title: Introduction aux commandes Linux Debian
+title: 01. Introduction aux commandes Linux Debian
 author: Ludwig Chieng
 category: Linux-Debian
 tags: [linux, debian, ubuntu, mint, commandes, terminal, shell, bash]
