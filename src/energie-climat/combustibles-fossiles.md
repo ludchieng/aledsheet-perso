@@ -5,6 +5,7 @@ category: Énergie-Climat
 tags: [énergie, climat, effet de serre, énergies, combustibles fossiles, dérèglement climatique, pétrole, gaz, charbon]
 
 layout: sheet
+hidden: true
 ---
 
 # Combustibles fossiles
