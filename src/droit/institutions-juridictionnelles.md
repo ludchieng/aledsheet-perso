@@ -62,29 +62,14 @@ Dans une optique libérale, l'État admet que certains litiges puissent être **
 
 ### Modes alternatifs de règlement des litiges (MARL)
 
-Autres manières de trancher les litiges en France
+Autres manières de trancher les litiges en France :
+
+| Modes non-juridictionnels | Mode juridictionnel |
+|---------------------------|---------------------|
+| Conciliation et Médiation | Arbitrage           |
 
 
-<table>
-  <tr>
-   <td colspan="2" ><strong>Mode non juridictionnel</strong>
-   </td>
-   <td><strong>Mode juridictionnel</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Conciliation
-   </td>
-   <td>Médiation
-   </td>
-   <td>Arbitrage
-   </td>
-  </tr>
-</table>
-
-
-
-#### Mode non juridictionnel : Conciliation et Médiation
+#### Modes non-juridictionnels : Conciliation et Médiation
 
 Techniques de **rapprochement des points de vue** des parties qui aboutissent à un acte qui sera une convention ou une renonciation.
 
