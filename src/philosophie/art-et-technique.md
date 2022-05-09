@@ -2,7 +2,8 @@
 title: Art et technique
 author: null
 quality: 5
-tags: [philosophie, culture, art, technique]
+category: philosophie
+tags: [culture, art, technique]
 licence: (c) auteur inconnu
 
 id: art-et-technique

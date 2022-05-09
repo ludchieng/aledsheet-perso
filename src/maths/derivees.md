@@ -1,7 +1,8 @@
 ---
 title: Dérivées
 author: Ludwig Chieng
-tags: [maths, analyse, fonction, derivées, derivation]
+category: maths
+tags: [analyse, fonction, derivées, derivation]
 
 layout: sheet
 ---

@@ -2,7 +2,8 @@
 title: Culture
 author: null
 quality: 5
-tags: [philosophie, culture, nature]
+category: philosophie
+tags: [culture, nature]
 licence: (c) auteur inconnu
 
 id: culture

@@ -1,7 +1,8 @@
 ---
 title: Séries de Fourier
 author: Ludwig Chieng
-tags: [signal, séries, fourier]
+category: signal
+tags: [séries, fourier]
 
 layout: sheet
 ---

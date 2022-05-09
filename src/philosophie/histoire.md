@@ -2,7 +2,8 @@
 title: Histoire
 author: null
 quality: 5
-tags: [philosophie, culture, histoire]
+category: philosophie
+tags: [culture, histoire]
 licence: (c) auteur inconnu
 
 id: histoire

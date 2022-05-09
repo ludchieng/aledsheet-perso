@@ -1,7 +1,8 @@
 ---
 title: Développements limités
 author: Ludwig Chieng
-tags: [maths, developpements, limités, taylor, young]
+category: maths
+tags: [developpements, limités, taylor, young]
 
 layout: sheet
 ---

@@ -2,7 +2,8 @@
 title: Langage
 author: null
 quality: 5
-tags: [philosophie, culture, langage]
+category: philosophie
+tags: [culture, langage]
 licence: (c) auteur inconnu
 
 id: langage

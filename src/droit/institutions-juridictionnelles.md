@@ -2,7 +2,8 @@
 title: Institutions juridictionnelles
 author: Ludwig Chieng
 quality: 4
-tags: [droit, institution, juridiction]
+category: droit
+tags: [institution, juridiction]
 licence: CC-BY-SA Ludwig Chieng
 
 layout: sheet

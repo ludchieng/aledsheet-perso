@@ -1,7 +1,8 @@
 ---
 title: Dérèglement climatique
 author: Ludwig Chieng
-tags: [énergie-climat, énergie, climat, effet de serre, énergies, combustibles fossiles, dérèglement climatique]
+category: énergie-climat
+tags: [énergie, climat, effet de serre, énergies, combustibles fossiles, dérèglement climatique]
 
 layout: sheet
 ---

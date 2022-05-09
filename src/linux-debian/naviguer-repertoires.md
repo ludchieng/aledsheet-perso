@@ -1,7 +1,8 @@
 ---
 title: Naviguer dans les répertoires
 author: Ludwig Chieng
-tags: [linux-debian, linux, debian, ubuntu, mint, commandes, terminal, shell, bash]
+category: linux-debian
+tags: [linux, debian, ubuntu, mint, commandes, terminal, shell, bash]
 licence: CC-BY-SA Ludwig Chieng
 
 layout: sheet

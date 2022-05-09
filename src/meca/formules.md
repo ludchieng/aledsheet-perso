@@ -1,7 +1,8 @@
 ---
 title: Formules
 author: Ludwig Chieng
-tags: [mécanique, méca, cinématique, force, couple, cinétique, masse, inertie, énergétique]
+category: méca
+tags: [mécanique, cinématique, force, couple, cinétique, masse, inertie, énergétique]
 
 layout: sheet
 ---

@@ -1,7 +1,8 @@
 ---
 title: Fondamentaux de Linux Debian
 author: Ludwig Chieng
-tags: [linux-debian, linux, debian, ubuntu, mint]
+category: linux-debian
+tags: [linux, debian, ubuntu, mint]
 licence: CC-BY-SA Ludwig Chieng
 
 layout: sheet

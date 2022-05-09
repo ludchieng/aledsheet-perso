@@ -1,7 +1,8 @@
 ---
 title: Sustentation de l'aile
 author: Ludwig Chieng
-tags: [aéro, aérodynamique, sustentation, aile, naca, trainée, écoulement, air]
+category: aéro
+tags: [aérodynamique, sustentation, aile, naca, trainée, écoulement, air]
 licence: CC-BY-SA Ludwig Chieng
 
 layout: sheet

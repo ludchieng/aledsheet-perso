@@ -1,7 +1,8 @@
 ---
 title: Décarbonation
 author: Ludwig Chieng
-tags: [énergie-climat, énergie, climat, effet de serre, énergies, combustibles fossiles, dérèglement climatique, pétrole, gaz, charbon, décarbonation, transition énergétique]
+category: énergie-climat
+tags: [énergie, climat, effet de serre, énergies, combustibles fossiles, dérèglement climatique, pétrole, gaz, charbon, décarbonation, transition énergétique]
 
 layout: sheet
 ---

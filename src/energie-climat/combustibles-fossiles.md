@@ -1,7 +1,8 @@
 ---
 title: Combustibles fossiles
 author: Ludwig Chieng
-tags: [énergie-climat, énergie, climat, effet de serre, énergies, combustibles fossiles, dérèglement climatique, pétrole, gaz, charbon]
+category: énergie-climat
+tags: [énergie, climat, effet de serre, énergies, combustibles fossiles, dérèglement climatique, pétrole, gaz, charbon]
 
 layout: sheet
 ---
