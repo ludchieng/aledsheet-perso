@@ -6,7 +6,6 @@
 @import url('utils.css');
 
 p {
-  line-height: 1.5;
   margin: 0 auto 1rem auto;
 }
 
@@ -36,6 +35,14 @@ ul, ol {
   padding-left: 1rem;
 }
 
+p + ul, p + ol {
+  margin-top: -0.5rem;
+}
+
+ul ul {
+  list-style-type: '– ';
+}
+
 li {
   margin-bottom: 0.3rem;
 }
@@ -44,6 +51,8 @@ code {
   background-color: #282a36;
   border-radius: 0.25em;
   padding: 0 0.2em;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 pre {
@@ -55,6 +64,12 @@ pre {
 
 pre code {
   padding: 0;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.tags {
+  margin-bottom: 0.5rem;
 }
 
 .tags span {

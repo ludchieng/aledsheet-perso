@@ -1,17 +1,18 @@
 body {
   margin: 0 1.2rem;
+  line-height: 1.5;
   background-color: #1a202c;
   color: #cbd5e0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: sans-serif;
+}
+
+header {
+  font-size: 0.95rem;
 }
 
 main {
   display: block;
   margin: 0 auto;
-}
-
-article {
-  line-height: 1.5;
 }
 
 footer {

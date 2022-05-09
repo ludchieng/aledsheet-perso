@@ -6,17 +6,17 @@
   <title>{{ metadata.appname }}</title>
   <link rel="icon" type="image/png" href="{{ metadata.favicon }}">
   <link rel="stylesheet" href="/styles/content.css">
+{%- if config.styles.fonts %}
   <link rel="stylesheet" href="/styles/fonts.css">
+{%- endif %}
+{%- if config.styles.extras %}
   <link rel="stylesheet" href="/styles/extras.css">
+{%- endif %}
 </head>
 <body>
   <main class="medium-width">
 
-    <nav>
-      <div class="go-to-index">
-        <a href="/index.html">Retour à l'index</a>
-      </div>
-    </nav>
+    {% include "nav.njk" %}
 
     <hr/>
 
@@ -24,18 +24,15 @@
       {{ content | safe }}
     </article>
 
-    <nav>
-      <div class="go-to-index">
-        <a href="/index.html">Retour à l'index</a>
-      </div>
-    </nav>
-
     <hr/>
 
     <footer>
-      <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
-        @ludchieng/aledsheet
-      </a>
+      <div>
+        <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
+          @ludchieng/aledsheet
+        </a>
+      </div>
+      {% include "nav.njk" %}
     </footer>
 
   </main>

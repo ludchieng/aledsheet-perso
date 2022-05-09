@@ -6,8 +6,12 @@
   <title>{{ title }} · {{ metadata.appname }}</title>
   <link rel="icon" type="image/png" href="{{ metadata.favicon }}">
   <link rel="stylesheet" href="/styles/content.css">
+{%- if config.styles.fonts %}
   <link rel="stylesheet" href="/styles/fonts.css">
+{%- endif %}
+{%- if config.styles.extras %}
   <link rel="stylesheet" href="/styles/extras.css">
+{%- endif %}
   <link rel="stylesheet" href="/styles/code-highlight.css">
 </head>
 <body>
@@ -21,6 +25,9 @@
           <span><a href="/tag/{{ tag }}">{{ tag }}</a></span>
         {% endfor -%}
       </div>
+      <div>
+        Dernière édition : {{ page.date | date }}
+      </div>
     </header>
 
     <hr/>
@@ -33,14 +40,24 @@
 
     <footer>
       <div>
-        {%- if author | length %}
+        <div>
+          {%- if author | length %}
           <span>
             Rédigé par {{ author }}
           </span>
-        {%- endif %}
-        <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
-          @ludchieng/aledsheet
-        </a>
+          {%- endif %}
+          {%- if basedOn | length %}
+          <br/>
+          <span>
+            Basé sur {{ basedOn }}
+          </span>
+          {%- endif %}
+        </div>
+        <div>
+          <a class="go-to-github" href="https://github.com/ludchieng/aledsheet">
+            @ludchieng/aledsheet
+          </a>
+        </div>
       </div>
       {% include "nav.njk" %}
     </footer>
