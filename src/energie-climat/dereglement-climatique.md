@@ -51,40 +51,6 @@ La majorité du surplus d'effet de serre est causé par les **combustibles fossi
 
 En anglais : *carbon dioxyde* (CO~2~), *methane* ou *natural gas* ou *fossil gas* (CH~4~), *nitrous oxyde* (N~2~O).
 
-***Contribution aux émissions de GES par secteur d'usage dans le monde en 2016. Données Climate Watch Data via World Ressources Institute :***
-
-```chart
-{
-  "type": "pie",
-  "data": {
-    "labels": ["CO2 Transport routier", "CO2 Transport ferré", "CO2 Transport aérien", 
-      "CO2 Transport maritime", "CO2 Bâtiment résidentiel", "CO2 Bâtiment commercial",
-      "CO2 Industrie acier et fonte", "CO2 Industrie chimie et pétrochimie", "CO2 Industrie calcination calcaire (ciment)",
-      "CO2 Autres industries", "CO2 Agriculture et pêche", "CO2 Autres",
-      "Autres GES"],
-    "datasets": [
-      { "data":[11.9, 0.4, 1.9,
-          1.7, 10.9, 6.6,
-          7.2, 3.6, 3,
-          10.4, 1.7, 14.7,
-          26],
-        "borderWidth": 0,
-        "backgroundColor": ["#C76B9E", "#B3608E", "#945075",
-          "#7A4261", "#34A6B3", "#2B8994",
-          "#D93434", "#C72F2F", "#B32B2B",
-          "#942323", "#42B344", "#C7A200",
-          "#8882"] } ]
-  },
-  "options": {
-    "animation": false,
-    "title": { "text": [
-      "Contribution aux émissions de GES par secteur d'usage dans le monde en 2016.",
-      "Données Climate Watch Data via World Ressources Institute." ] },
-    "legend": { "position": "right", "labels": { "fontSize": 14 } }
-  }
-}
-```
-
 
 ### Risques et conséquences notables
 
