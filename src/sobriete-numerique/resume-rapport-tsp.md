@@ -19,7 +19,7 @@ Le rapport est publié en octobre 2020.
 Analyser et donner des cadres méthodologiques pour déployer la sobriété numérique. Le rapport le fait en trois grands axes :
 - **Analyser la pertinence énergétique des projets connectés**. Pour les collectivités locales, les entreprises et les investisseurs.
 - **Piloter environnementalement le système d'information**. Pour les entreprises, les organismes publics, les collectivités locales et l'État.
-- **Conmprendre les usages numériques pour mieux les piloter**. Pour l'État, les régulateurs, les entreprises/salariés, les parents et la communauté éducative.
+- **Comprendre les usages numériques pour mieux les piloter**. Pour l'État, les régulateurs, les entreprises/salariés, les parents et la communauté éducative.
 
 
 ## Pertinence énergétiques des technologies connectées
