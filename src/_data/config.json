@@ -1,6 +1,6 @@
 {
     "styles": {
-        "fonts": true,
-        "extras": true
+        "fonts": false,
+        "extras": false
     }
 }
