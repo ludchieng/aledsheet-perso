@@ -1,7 +1,7 @@
 ---
 title: Emmanuel Hache - Interview au GLC
 author: Ludwig Chieng
-category: transcriptions
+category: Transcriptions
 tags: [écologie, métaux, terres rares]
 licence: (c)
 

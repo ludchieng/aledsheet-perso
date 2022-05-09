@@ -1,7 +1,7 @@
 ---
 title: Fiction
 author: Ludwig Chieng
-category: audiovisuel
+category: Audiovisuel
 tags: [fiction]
 licence: CC-BY-SA Ludwig Chieng
 

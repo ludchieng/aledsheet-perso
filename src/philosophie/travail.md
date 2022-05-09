@@ -2,7 +2,7 @@
 title: Travail
 author: null
 quality: 5
-category: philosophie
+category: Philosophie
 tags: [culture, travail]
 licence: (c) auteur inconnu
 

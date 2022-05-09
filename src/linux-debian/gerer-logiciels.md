@@ -1,7 +1,7 @@
 ---
 title: Gérer les logiciels
 author: Ludwig Chieng
-category: linux-debian
+category: Linux-Debian
 tags: [linux, debian, ubuntu, mint, commandes, terminal, shell, bash]
 licence: CC-BY-SA Ludwig Chieng
 

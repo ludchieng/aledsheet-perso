@@ -2,7 +2,7 @@
 title: Caractères spéciaux
 author: Ludwig Chieng
 quality: 5
-category: bureautique
+category: Bureautique
 tags: [caractères spéciaux, emoji]
 licence: CC-BY-SA Ludwig Chieng
 

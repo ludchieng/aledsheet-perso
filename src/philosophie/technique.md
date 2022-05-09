@@ -2,7 +2,7 @@
 title: Technique
 author: null
 quality: 5
-category: philosophie
+category: Philosophie
 tags: [culture, technique]
 licence: (c) auteur inconnu
 

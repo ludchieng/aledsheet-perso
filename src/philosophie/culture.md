@@ -2,7 +2,7 @@
 title: Culture
 author: null
 quality: 5
-category: philosophie
+category: Philosophie
 tags: [culture, nature]
 licence: (c) auteur inconnu
 

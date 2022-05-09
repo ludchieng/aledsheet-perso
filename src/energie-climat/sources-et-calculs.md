@@ -1,7 +1,7 @@
 ---
 title: Sources et calculs
 author: Ludwig Chieng
-category: énergie-climat
+category: Énergie-Climat
 tags: [énergie, climat]
 
 layout: sheet

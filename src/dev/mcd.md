@@ -1,7 +1,7 @@
 ---
 title: Modèle Conceptuel de Données
 author: Patrick Bergougnoux, Ludwig Chieng
-category: dev
+category: Dev
 tags: [logiciel, mcd, bdd, sql]
 licence: (c)
 

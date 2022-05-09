@@ -2,7 +2,7 @@
 title: Langage
 author: null
 quality: 5
-category: philosophie
+category: Philosophie
 tags: [culture, langage]
 licence: (c) auteur inconnu
 

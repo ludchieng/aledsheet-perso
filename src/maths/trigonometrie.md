@@ -1,7 +1,7 @@
 ---
 title: Trigonométrie
 author: Ludwig Chieng
-category: maths
+category: Maths
 tags: [analyse, fonction, trigonométrie, trigo]
 
 layout: sheet

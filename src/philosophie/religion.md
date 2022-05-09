@@ -2,7 +2,7 @@
 title: Religion
 author: null
 quality: 5
-category: philosophie
+category: Philosophie
 tags: [culture, religion]
 licence: (c) auteur inconnu
 

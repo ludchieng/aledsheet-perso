@@ -1,7 +1,7 @@
 ---
 title: Capitalisme
 author: Ludwig Chieng
-category: économie-finance
+category: Économie-Finance
 tags: [capitalisme]
 licence: CC-BY-SA Ludwig Chieng
 

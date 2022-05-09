@@ -1,7 +1,7 @@
 ---
 title: Signaux acoustiques
 author: Ludwig Chieng
-category: signal
+category: Signal
 tags: [signaux, acoustiques]
 
 layout: sheet

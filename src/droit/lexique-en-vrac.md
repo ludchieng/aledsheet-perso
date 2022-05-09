@@ -2,7 +2,7 @@
 title: Lexique en vrac
 author: Ludwig Chieng
 quality: 4
-category: droit
+category: Droit
 tags: [institution, juridiction, lexique]
 licence: CC-BY-SA Ludwig Chieng
 

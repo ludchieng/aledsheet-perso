@@ -2,7 +2,7 @@
 title: Preuve
 author: Ludwig Chieng
 quality: 5
-category: zététique
+category: Zététique
 tags: [preuve]
 licence: CC-BY-SA Ludwig Chieng
 
